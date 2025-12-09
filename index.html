@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ultra Premium Portfolio — Your Name</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Loader -->
+    <div class="loader-wrap" id="loader">
+      <div class="loader" role="status" aria-live="polite">
+        <div style="display: flex; gap: 8px">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom cursor -->
+    <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+    <div class="site">
+      <!-- Topbar -->
+      <header class="topbar" role="banner">
+        <div class="brand">
+          <div class="logo-dot">MY.</div>
+          <div>
+            <div style="font-weight: 700">Irfan k.h</div>
+            <div style="font-size: 12px; color: var(--muted)">
+              Frontend Developer • UI/UX
+            </div>
+          </div>
+        </div>
+
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#blog">Blog</a>
+          <a href="#skills">Skills</a>
+          <a href="#game">Game</a>
+          <a href="#contact">Contact</a>
+      
+          <button
+            class="icon-btn"
+            id="themeToggle"
+            aria-pressed="false"
+            title="Toggle theme"
+          >
+            🌙
+          </button>
+        </nav>
+      </header>
+
+      <!-- HERO -->
+      <main id="home" class="hero">
+        <div class="hero-left">
+          <div class="eyebrow reveal">Featured — Interactive Portfolio</div>
+          <h1 class="title reveal">
+            Hi — I'm <span style="color: var(--accent)">Irfan</span>.<br />
+            I build delightful web experiences.
+          </h1>
+          <p class="lead reveal">
+            I design & develop modern, accessible, and performant web apps. My
+            work balances beautiful UI with robust front-end engineering.
+          </p>
+
+          <div class="cta-group reveal">
+            <button class="cta" id="viewProjects">View Projects</button>
+            <a class="cta secondary" href="#contact">Let's talk</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="neon-line" style="top: -6px; left: 10px"></div>
+
+          <div class="profile-card" id="profileCard" data-parallax>
+            <div class="profile-photo">
+              <img src="fotoprofil.jpg" alt="Your profile photo" />
+            </div>
+            <div class="profile-meta">
+              <div class="meta-left">
+                <div class="name">M.irfan khoirul hidayah</div>
+                <div class="role">Frontend Engineer</div>
+              </div>
+              <div class="socials">
+
+  <!-- YOUTUBE -->
+  <a href="https://youtube.com/@ipanteck?si=_E_UqD2EsDjk1Llm" target="_blank" class="social-btn" title="YouTube">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M19.615 3.184c1.16.31 2.058 1.21 2.366 2.37C22.5 7.68 22.5 12 22.5 12s0 4.32-.519 6.446c-.308 1.16-1.206 2.06-2.366 2.37C17.488 21.75 12 21.75 12 21.75s-5.488 0-7.615-.934c-1.16-.31-2.058-1.21-2.366-2.37C1.5 16.32 1.5 12 1.5 12s0-4.32.519-6.446c.308-1.16 1.206-2.06 2.366-2.37C6.512 2.25 12 2.25 12 2.25s5.488 0 7.615.934zM10 8.25v7.5l6-3.75-6-3.75z"/>
+    </svg>
+  </a>
+
+  <!-- TIKTOK -->
+  <a href="https://www.tiktok.com/@ipan_dontcrazy" target="_blank" class="social-btn" title="TikTok">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.5 2c.7 0 1.3 0 2 .1 0 1.2.4 2.3 1.1 3.3.8 1 1.8 1.6 3 1.8v3.2c-1.8-.1-3.3-.7-4.7-1.8v6.9c0 2.7-1.9 4.9-4.6 5.3-2.9.4-5.4-1.5-5.8-4.3-.4-2.9 1.5-5.4 4.4-5.8.5-.1 1-.1 1.5-.1v3.3c-.5-.1-1 0-1.5.1-.9.2-1.6 1-1.7 1.9-.2 1.4.9 2.6 2.3 2.6 1.2 0 2.2-1 2.2-2.2V2h1.8z"/>
+    </svg>
+  </a>
+
+  <!-- GITHUB -->
+  <a href="https://ndugalsodek-boop.github.io/portofolioirfan/" target="_blank" class="social-btn" title="GitHub">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.1-1.2-1.4-1.2-1.4-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1 1.7-.7 1.9-1 .1-.7.4-1.1.7-1.4-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.1-3.3-.1-.3-.5-1.5.1-3.1 0 0 .9-.3 3.3 1.2a11 11 0 0 1 6 0c2.4-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.7.9 1.1 2 1.1 3.3 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6a11.5 11.5 0 0 0 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/>
+    </svg>
+  </a>
+
+</div>
+
+            </div>
+          </div>
+
+          <div
+            style="display: flex; gap: 10px; margin-top: 10px"
+            class="reveal"
+          >
+            <div class="info-card">
+              <div class="info-title">Experience</div>
+              <div class="info-value">3+ yrs</div>
+            </div>
+            <div class="info-card">
+              <div class="info-title">Location</div>
+              <div class="info-value">Indonesia</div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Wave -->
+      <div class="wave">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+          <path
+            fill="#07070b"
+            d="M0,16 C240,96 480,0 720,32 C960,64 1200,0 1440,32 L1440 80 L0 80 Z"
+          ></path>
+        </svg>
+      </div>
+
+<!-- ABOUT -->
+      <section id="about" class="content">
+        <h2 class="section-title reveal">About Me</h2>
+        <div class="grid">
+          <div class="skills-list reveal">
+            <p class="muted"> Saya seorang Pengembang Frontend yang bersemangat dan gemar menciptakan antarmuka pengguna yang bersih, modern, dan sangat interaktif. Berbekal pengalaman dalam membangun situs web responsif, membuat prototipe pengalaman UI/UX, dan mengembangkan sistem front-end yang fungsional, saya selalu fokus pada penyediaan antarmuka yang menarik secara visual dan ramah pengguna. 
+            </p>
+
+            <div style="margin-top: 14px">
+            
+            </div>
+          </div>
+
+          <aside class="about-card reveal">
+            <h3>Quick Facts</h3>
+          <p class="muted"> • Menguasai HTML, CSS, JavaScript, dan Python.<br/>
+           • Suka membuat web interaktif dan proyek IoT <br/>
+             • Penggemar desain clean & modern<br/>
+           </p>
+          </aside>
+          <div>
+        </div>
+      </section>
+
+
+      <!-- PROJECTS -->
+      <section id="projects" class="content">
+        <h2 class="section-title reveal">Selected Projects</h2>
+
+        <div class="grid">
+          <div style="grid-column: 1/-1" class="reveal">
+            <div class="slider">
+              <div class="slides" id="slides">
+                <div class="slide">
+                  <img src="projek1.jpg" />
+                  <h3>Project 1 — Robot Avoider</h3>
+                  <p class="muted">Robot Avoider adalah robot mobil sederhana yang mampu menghindari rintangan secara otomatis. Sistem ini bekerja menggunakan sensor ultrasonik yang mendeteksi objek di depan robot.</p>
+                </div>
+
+                <div class="slide">
+                  <img src="projek2.jpg" />
+                  <h3>Project 2 — Pengukur Jarak</h3>
+                  <p class="muted">
+                    Proyek Pengukur Jarak ini menggunakan sensor ultrasonik untuk mengukur jarak antara sensor dan objek di depannya. Data jarak kemudian ditampilkan ke LCD atau serial monitor.
+                  </p>
+                </div>
+
+                <div class="slide">
+                  <img src="projek3.jpg" />
+                  <h3>Project 3 — Smart Home</h3>
+                  <p class="muted">Smart Home adalah sistem otomatisasi rumah modern yang memungkinkan pengguna mengontrol perangkat rumah seperti lampu, kipas, pintu otomatis, kamera, dan sensor keamanan melalui ponsel ataupun kontrol suara.</p>
+                </div>
+              </div>
+
+              <div class="slider-controls">
+                <button class="arrow" id="prev">‹</button>
+                <button class="arrow" id="next">›</button>
+                <div class="dots" id="dots"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- BLOG -->
+<section id="blog" class="content">
+  <h2 class="section-title reveal">Blog — Prototype Smart Home</h2>
+
+  <div class="blog-container reveal">
+
+    <!-- CARD + ACCORDION -->
+    <div class="blog-card">
+      <img src="smarthome.png" alt="Smart Home Prototype" class="blog-img" />
+
+      <h3 class="blog-title">Tata Cara Pembuatan Prototype Smart Home</h3>
+      <p class="muted">Panduan lengkap membuat prototype smart home mulai dari perencanaan hingga testing.</p>
+
+      <div class="accordion">
+
+        <!-- Step 1 -->
+        <div class="accordion-item">
+          <button class="accordion-header">1. Menentukan Kebutuhan Sistem</button>
+          <div class="accordion-body">
+            Menentukan fitur seperti otomatisasi lampu, sensor gerak, kontrol suhu, keamanan, dan kontrol jarak jauh.
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="accordion-item">
+          <button class="accordion-header">2. Menyiapkan Komponen</button>
+          <div class="accordion-body">
+            Arduino/ESP8266, relay, sensor gerak PIR, sensor suhu DHT11, buzzer, servo, kabel jumper, dan breadboard.
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="accordion-item">
+          <button class="accordion-header">3. Mendesain Rangkaian</button>
+          <div class="accordion-body">
+            Buat skema rangkaian menggunakan Tinkercad atau Fritzing agar proses perakitan lebih mudah dan rapi.
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="accordion-item">
+          <button class="accordion-header">4. Merakit Hardware</button>
+          <div class="accordion-body">
+            Rakit komponen sesuai diagram. Gunakan breadboard agar mudah memperbaiki jika ada kesalahan.
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="accordion-item">
+          <button class="accordion-header">5. Coding & Integrasi</button>
+          <div class="accordion-body">
+            Upload kode Arduino/ESP. Integrasikan sensor, relay, dan modul komunikasi (WiFi/Bluetooth).
+          </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="accordion-item">
+          <button class="accordion-header">6. Pengujian Sistem</button>
+          <div class="accordion-body">
+            Uji sensor satu per satu: sensor PIR, relay lampu, suhu, pintu otomatis, alarm keamanan.
+          </div>
+        </div>
+
+        <!-- Step 7 -->
+        <div class="accordion-item">
+          <button class="accordion-header">7. Finishing</button>
+          <div class="accordion-body">
+            Susun prototype dalam box akrilik atau kardus tebal agar terlihat seperti smart home miniatur.
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="content">
+  <h2 class="section-title reveal">Skills</h2>
+
+  <div class="grid skills-grid reveal">
+    <div class="skill-card">
+      <h3>Frontend Development</h3>
+      <p class="muted">HTML • CSS • JavaScript • Responsive Design • UI Components</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Programming</h3>
+      <p class="muted">Python • C++ • Arduino • Microcontroller Projects</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>UI/UX Design</h3>
+      <p class="muted">Wireframing • Prototyping • Figma • Modern Clean Design</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Tools & Others</h3>
+      <p class="muted">Git • VS Code • SQL • IoT Projects • Sensor Integration</p>
+    </div>
+  </div>
+</section>
+      </section>
+
+
+    <!-- GAME SECTION -->
+<section id="game" class="content">
+  <h2 class="section-title reveal">English Sentence Builder (Enhanced)</h2>
+
+  <div class="game-container reveal">
+    <div class="game-title">Math → English Sentence Builder</div>
+
+    <div id="stage">
+      <div class="question" id="question">Loading...</div>
+      <input type="number" id="answer" placeholder="Your answer..." />
+      <button id="submitBtn" onclick="checkAnswer()">Submit</button>
+    </div>
+
+    <div class="result" id="finalSentence"></div>
+
+    <button id="restartBtn" onclick="restartGame()" style="display:none;">
+      Restart Game
+    </button>
+
+    <div class="leaderboard">
+      <h3>Leaderboard</h3>
+      <ul id="leaderList"></ul>
+    </div>
+  </div>
+</section>
+
+<!-- AUDIO -->
+<audio id="correctSound" src="C:\Users\LAB_RPL\Downloads\correct_arcade.wav"></audio>
+<audio id="wrongSound" src="C:C:\Users\LAB_RPL\Downloads\wrong_arcade.wav"></audio>
+
+
+      <!-- Wave -->
+      <div class="wave" style="transform: rotate(180deg)">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+          <path
+            fill="#07070b"
+            d="M0,16 C240,96 480,0 720,32 C960,64 1200,0 1440,32 L1440 80 L0 80 Z"
+          ></path>
+        </svg>
+      </div>
+
+      
+
+
+
+   <!-- CONTACT -->
+<section id="contact" class="content">
+  <h2 class="section-title reveal">Contact</h2>
+
+  <div class="contact-container">
+
+    <!-- MAP -->
+    <div class="map-card reveal">
+      <h3>Location</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d411.9893869033409!2d113.1174981779344!3d-8.210004448951947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sid!2sid!4v1764122768718!5m2!1sid!2sid"
+        style="border:0; width:100%; height:350px; border-radius:14px;"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <form class="contact-form reveal" id="contactForm">
+      <input
+        class="input"
+        type="text"
+        name="name"
+        placeholder="Your name"
+        required
+      />
+      <input
+        class="input"
+        type="email"
+        name="email"
+        placeholder="Email"
+        required
+      />
+      <textarea
+        class="input"
+        name="message"
+        rows="5"
+        placeholder="Message"
+        required
+      ></textarea>
+      <button class="send-btn" type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+      <footer class="site-footer">
+        © <span id="year"></span> M.Irfan k.h — Built with care.
+      </footer>
+    </div>
+
+    <!-- LINK JAVASCRIPT -->
+    <script src="script.js"></script>
+  </body>
+</html>                                                                                                                 
